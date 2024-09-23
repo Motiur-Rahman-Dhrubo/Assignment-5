@@ -20,7 +20,8 @@
             theme: {
                 colors: {
                     'btn-alfa': '#B4F461',
-                    'nav-alfa': '#F9F7F3',
+                    'btn-beta': '#454545',
+                    'nav-alfa': 'rgba(249, 247, 243, 0.7);',
                     'bdt-alfa': '#F3F3F3',
                     'border-btn': '#B1B1B3',
                     'border-card': '#E0E0E2',
@@ -29,6 +30,9 @@
                     'text-gamma': '#585858',
                     'text-mono': '#545454',
                     'text-di': '#A0A0A0',
+                    'red': '#E63F31',
+                    'blue': '#1F88D9',
+                    'white': 'rgba(255, 255, 255, 0.7)',
                 },
                 fontFamily: {
                     lexend: ['Lexend', 'sans-serif'],
@@ -38,10 +42,44 @@
      </script>
 </head>
 <body class="font-lexend">
-    <h1 class="text-text-beta text-5xl bg-btn-alfa">testing home page</h1>
-    <button onclick="goBlog()">go blog</button>
+    <header class="md:sticky static top-0 backdrop-blur-md border-b border-solid border-border-card">
 
+        <!-- nav-bar-start -->
+        <nav class="bg-nav-alfa w-full py-3 md:py-4">
+            <div class="items-center w-11/12 m-auto gap-2 flex md:hidden pb-3 mb-3 border-border-card border-b border-solid justify-center">
+                <img class="h-[30px] w-[30px]" src="assets/logo.png" alt="brand logo">
+                <p class="text-[16px] font-[600] text-text-alfa">Donate Bangladesh</p>
+            </div>
+            <div class="flex w-11/12 m-auto justify-between items-center">
+                <button onclick="goBlog()" class="bg-btn-alfa text-[16px] md:text-[18px] lg:text-[20px] font-[600] text-text-alfa lg:p-[12px_32px] md:p-[8px_28px] p-[6px_26px] border-none rounded-lg hover:bg-btn-beta hover:text-white">Blog</button>
+                <div class="items-center gap-3 lg:gap-4 md:flex hidden">
+                    <img class="lg:h-[48px] h-[40px] lg:w-[48px] w-[40px]" src="assets/logo.png" alt="brand logo">
+                    <p class="text-[16px] md:text-[18px] lg:text-[20px] font-[600] text-text-alfa">Donate Bangladesh</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <img class="lg:w-[28px] md:w-[26px] w-[24px] lg:h-[28px] md:h-[26px] h-[24px]" src="assets/coin.png" alt="coin">
+                    <p class="text-[16px] md:text-[18px] lg:text-[20px] font-[500] text-text-beta"><span>5500</span> BDT</p>
+                </div>
+            </div>
+        </nav>
+        <!-- nav-bar-end -->
 
+        <!-- button-sec-start -->
+        <section class="w-full flex lg:gap-4 md:gap-3 gap-2 justify-center py-3 md:py-4 bg-white">
+            <button class="bg-btn-alfa text-[16px] md:text-[18px] lg:text-[20px] font-[600] lg:p-[16px_32px] md:p-[12px_28px] p-[10px_24px] rounded-lg">Donation</button>
+            <button class="bg-btn-alfa text-[16px] md:text-[18px] lg:text-[20px] font-[600] lg:p-[16px_32px] md:p-[12px_28px] p-[10px_24px] rounded-lg">History</button>
+        </section>
+        <!-- button-sec-end -->
+
+    </header>
+    <main>
+        <h1>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi laborum et id porro aut deserunt maxime, iusto magnam optio incidunt similique. Iste sit eligendi nemo reprehenderit vitae enim accusamus nihil alias amet sed distinctio repudiandae fugit quis delectus deserunt culpa, modi libero, nesciunt maxime ex ut aperiam inventore consequatur! Beatae consectetur vero corporis sint, voluptas soluta dolorum exercitationem voluptatibus sapiente quae asperiores ut, obcaecati maiores cupiditate. Possimus placeat praesentium explicabo, laudantium non expedita cum! Quisquam quis voluptas adipisci dicta tenetur, nesciunt exercitationem praesentium commodi quos blanditiis odit obcaecati laborum, cumque ut eos illo ipsum quo corporis necessitatibus, officia aliquid mollitia quam vel laboriosam! Quidem ad repudiandae, quasi nobis eos iste sint voluptate vitae sed blanditiis commodi magnam neque delectus similique ipsam excepturi, eius aut aliquam sequi molestiae nostrum unde. Deserunt voluptate porro quia, sapiente accusamus illo quisquam aut soluta provident eos natus animi similique inventore, officiis illum eveniet adipisci quibusdam fugiat autem! Porro necessitatibus placeat sunt natus ut, tenetur repudiandae laudantium ratione alias facere totam excepturi eos fugit eveniet. Asperiores officia minus sapiente, ut dolores adipisci ea eum assumenda et nemo ipsa praesentium, delectus ad voluptatum debitis reiciendis dolore similique illo qui quasi? Dolorum assumenda beatae eveniet ratione, eius voluptate reprehenderit distinctio officia sequi repellat quod reiciendis. Accusamus minima, dolorum suscipit sequi voluptate natus, a magnam enim eum reiciendis nemo. Distinctio possimus deserunt fugit sint harum debitis inventore cupiditate nisi non! Eaque quo architecto neque totam illum iusto enim fugiat beatae. Est sed, ut eos voluptatem modi illo amet quia sapiente magnam? At neque ullam nobis aliquid quidem, aliquam quod sapiente in ipsam possimus molestias animi tempore, commodi vitae voluptas facere eligendi autem. Excepturi commodi, eveniet in repellat reprehenderit aliquam, non dolorum dignissimos ex obcaecati tenetur nemo nisi maiores! Veritatis, nostrum. Laborum nobis distinctio quam, quos consequuntur nemo accusantium. Soluta.
+        </h1>
+    </main>
+
+    <footer class="h-[60px] md:h-[70px] lg:h-[80px] w-full bg-nav-alfa">
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
