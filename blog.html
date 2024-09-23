@@ -34,6 +34,7 @@
                     'red': '#E63F31',
                     'blue': '#1F88D9',
                     'white': 'rgba(255, 255, 255, 0.7)',
+                    'white-beta': 'rgb(255, 255, 255)',
                 },
                 fontFamily: {
                     lexend: ['Lexend', 'sans-serif'],
@@ -44,7 +45,7 @@
 </head>
 
 <body class="font-lexend">
-    <header class="md:sticky static top-0 backdrop-blur-md border-b border-solid border-border-card">
+    <header class="sticky top-0 backdrop-blur-sm border-b border-solid border-border-card z-10">
 
         <!-- nav-bar-start -->
         <nav class="bg-nav-alfa w-full py-3 md:py-4">
@@ -55,7 +56,7 @@
             </div>
             <div class="flex w-11/12 m-auto justify-between items-center">
                 <button onclick="goHome()"
-                    class="bg-btn-alfa text-[16px] md:text-[18px] lg:text-[20px] font-[600] text-text-alfa lg:p-[12px_32px] md:p-[8px_28px] p-[6px_26px] border-none rounded-lg hover:bg-btn-beta hover:text-white">Home</button>
+                    class="bg-btn-alfa text-[16px] md:text-[18px] lg:text-[20px] font-[600] text-text-alfa lg:p-[12px_32px] md:p-[8px_28px] p-[6px_26px] border-none rounded-lg hover:bg-btn-beta hover:text-white-beta">Home</button>
                 <div class="items-center gap-3 lg:gap-4 md:flex hidden">
                     <img class="lg:h-[48px] h-[40px] lg:w-[48px] w-[40px]" src="assets/logo.png" alt="brand logo">
                     <p class="text-[16px] md:text-[18px] lg:text-[20px] font-[600] text-text-alfa">Donate Bangladesh</p>
@@ -70,41 +71,45 @@
         </nav>
         <!-- nav-bar-end -->
 
-        <!-- button-sec-start -->
-        <section class="w-full flex lg:gap-4 md:gap-3 gap-2 justify-center py-3 md:py-4 bg-white">
-            <button
-                class="bg-btn-alfa text-[16px] md:text-[18px] lg:text-[20px] font-[600] lg:p-[16px_32px] md:p-[12px_28px] p-[10px_24px] rounded-lg">Donation</button>
-            <button
-                class="bg-btn-alfa text-[16px] md:text-[18px] lg:text-[20px] font-[600] lg:p-[16px_32px] md:p-[12px_28px] p-[10px_24px] rounded-lg">History</button>
-        </section>
-        <!-- button-sec-end -->
-
     </header>
     <main>
-        <h1>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi laborum et id porro aut deserunt maxime,
-            iusto magnam optio incidunt similique. Iste sit eligendi nemo reprehenderit vitae enim accusamus nihil alias
-            amet sed distinctio repudiandae fugit quis delectus deserunt culpa, modi libero, nesciunt maxime ex ut
-            aperiam inventore consequatur! Beatae consectetur vero corporis sint, voluptas soluta dolorum exercitationem
-            voluptatibus sapiente quae asperiores ut, obcaecati maiores cupiditate. Possimus placeat praesentium
-            explicabo, laudantium non expedita cum! Quisquam quis voluptas adipisci dicta tenetur, nesciunt
-            exercitationem praesentium commodi quos blanditiis odit obcaecati laborum, cumque ut eos illo ipsum quo
-            corporis necessitatibus, officia aliquid mollitia quam vel laboriosam! Quidem ad repudiandae, quasi nobis
-            eos iste sint voluptate vitae sed blanditiis commodi magnam neque delectus similique ipsam excepturi, eius
-            aut aliquam sequi molestiae nostrum unde. Deserunt voluptate porro quia, sapiente accusamus illo quisquam
-            aut soluta provident eos natus animi similique inventore, officiis illum eveniet adipisci quibusdam fugiat
-            autem! Porro necessitatibus placeat sunt natus ut, tenetur repudiandae laudantium ratione alias facere totam
-            excepturi eos fugit eveniet. Asperiores officia minus sapiente, ut dolores adipisci ea eum assumenda et nemo
-            ipsa praesentium, delectus ad voluptatum debitis reiciendis dolore similique illo qui quasi? Dolorum
-            assumenda beatae eveniet ratione, eius voluptate reprehenderit distinctio officia sequi repellat quod
-            reiciendis. Accusamus minima, dolorum suscipit sequi voluptate natus, a magnam enim eum reiciendis nemo.
-            Distinctio possimus deserunt fugit sint harum debitis inventore cupiditate nisi non! Eaque quo architecto
-            neque totam illum iusto enim fugiat beatae. Est sed, ut eos voluptatem modi illo amet quia sapiente magnam?
-            At neque ullam nobis aliquid quidem, aliquam quod sapiente in ipsam possimus molestias animi tempore,
-            commodi vitae voluptas facere eligendi autem. Excepturi commodi, eveniet in repellat reprehenderit aliquam,
-            non dolorum dignissimos ex obcaecati tenetur nemo nisi maiores! Veritatis, nostrum. Laborum nobis distinctio
-            quam, quos consequuntur nemo accusantium. Soluta.
-        </h1>
+
+        <!-- faq-sec-start -->
+        <section class="w-11/12 mx-auto my-16 border border-solid border-border-card md:p-5 p-4 rounded-lg md:gap-4 gap-3 flex flex-col">
+            <div class="collapse collapse-arrow bg-white-beta border border-solid border-border-card rounded-lg">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title md:text-xl text-lg font-medium text-text-alfa">1. What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p class="md:text-lg text-md font-normal text-text-beta">The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of HTML documents as a tree, allowing scripts to manipulate content dynamically.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-white-beta border border-solid border-border-card rounded-lg">
+                <input type="radio" name="my-accordion-2"/>
+                <div class="collapse-title md:text-xl text-lg font-medium text-text-alfa">2. How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <p class="md:text-lg text-md font-normal text-text-beta">To select an element from the DOM, use methods like document.getElementById(), document.querySelector(), or
+                    document.getElementsByClassName() to access elements by ID, class, tag, or CSS selectors.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-white-beta border border-solid border-border-card rounded-lg">
+                <input type="radio" name="my-accordion-2"/>
+                <div class="collapse-title md:text-xl text-lg font-medium text-text-alfa">3. What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content">
+                    <p class="md:text-lg text-md font-normal text-text-beta">Event delegation in the DOM allows a parent element to handle events from its child elements. It improves performance by
+                    reducing event listeners and simplifies dynamic content handling.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-white-beta border border-solid border-border-card rounded-lg">
+                <input type="radio" name="my-accordion-2"/>
+                <div class="collapse-title md:text-xl text-lg font-medium text-text-alfa">4. How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content">
+                    <p class="md:text-lg text-md font-normal text-text-beta">To manipulate an element's attributes, use setAttribute() or direct properties like element.id. For styles, access
+                    element.style or use classList to add, remove, or toggle CSS classes.</p>
+                </div>
+            </div>
+        </section>
+        <!-- faq-sec-end -->
+
     </main>
 
     <footer class="h-[60px] md:h-[70px] lg:h-[80px] w-full bg-nav-alfa">

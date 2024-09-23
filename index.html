@@ -15,7 +15,7 @@
     <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- tailwind config -->
-     <script>
+    <script>
         tailwind.config = {
             theme: {
                 colors: {
@@ -33,16 +33,17 @@
                     'red': '#E63F31',
                     'blue': '#1F88D9',
                     'white': 'rgba(255, 255, 255, 0.7)',
+                    'white-beta': 'rgb(255, 255, 255)',
                 },
                 fontFamily: {
                     lexend: ['Lexend', 'sans-serif'],
                 },
             }
         }
-     </script>
+    </script>
 </head>
 <body class="font-lexend">
-    <header class="md:sticky static top-0 backdrop-blur-md border-b border-solid border-border-card">
+    <header class="sticky top-0 backdrop-blur-sm border-b border-solid border-border-card z-10">
 
         <!-- nav-bar-start -->
         <nav class="bg-nav-alfa w-full py-3 md:py-4">
@@ -51,7 +52,7 @@
                 <p class="text-[16px] font-[600] text-text-alfa">Donate Bangladesh</p>
             </div>
             <div class="flex w-11/12 m-auto justify-between items-center">
-                <button onclick="goBlog()" class="bg-btn-alfa text-[16px] md:text-[18px] lg:text-[20px] font-[600] text-text-alfa lg:p-[12px_32px] md:p-[8px_28px] p-[6px_26px] border-none rounded-lg hover:bg-btn-beta hover:text-white">Blog</button>
+                <button onclick="goBlog()" class="bg-btn-alfa text-[16px] md:text-[18px] lg:text-[20px] font-[600] text-text-alfa lg:p-[12px_32px] md:p-[8px_28px] p-[6px_26px] border-none rounded-lg hover:bg-btn-beta hover:text-white-beta">Blog</button>
                 <div class="items-center gap-3 lg:gap-4 md:flex hidden">
                     <img class="lg:h-[48px] h-[40px] lg:w-[48px] w-[40px]" src="assets/logo.png" alt="brand logo">
                     <p class="text-[16px] md:text-[18px] lg:text-[20px] font-[600] text-text-alfa">Donate Bangladesh</p>
