@@ -60,7 +60,7 @@
                 </div>
                 <div class="flex items-center gap-3">
                     <img class="lg:w-[28px] md:w-[26px] w-[24px] lg:h-[28px] md:h-[26px] h-[24px]" src="assets/coin.png" alt="coin">
-                    <p class="text-[16px] md:text-[18px] lg:text-[20px] font-[500] text-text-beta"><span>5500</span> BDT</p>
+                    <p class="text-[16px] md:text-[18px] lg:text-[20px] font-[500] text-text-beta"><span id="total_account">5500</span> BDT</p>
                 </div>
             </div>
         </nav>
@@ -86,15 +86,15 @@
                 <div class="md:w-7/12 w-full flex flex-col items-start lg:gap-4 gap-3">
                     <div class="inline-flex gap-2 items-center bg-bdt-alfa lg:p-[10px_16px] p-[6px_10px] rounded-lg">
                         <img class="lg:w-6 w-4 lg:h-6 h-4" src="assets/coin.png" alt="coin">
-                        <p class="lg:text-base text-sm font-normal text-text-mono"><span>0</span> BDT</p>
+                        <p class="lg:text-base text-sm font-normal text-text-mono"><span id="donate_noakhali">0</span> BDT</p>
                     </div>
                     <h2 class="lg:text-xl text-base font-bold text-text-alfa">Donate for Flood at Noakhali, Bangladesh</h2>
                     <p class="lg:text-base text-sm font-light text-text-gamma">The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide
                     essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please
                     join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                    <input type="text" autocomplete="off" class="w-full border border-solid border-border-card rounded-lg lg:p-[18px] p-3 outline-none lg:text-base text-sm font-light placeholder:text-text-di" placeholder="Write Donation Amount">
-                    <button class="bg-btn-alfa w-full text-center rounded-lg hover:bg-btn-beta hover:text-white-beta lg:text-xl text-base font-semibold text-text-alfa lg:py-4 py-2" onclick="my_modal_1.showModal()">Donate Now</button>
-                    <dialog id="my_modal_1" class="modal">
+                    <input id="input_noakhali" type="text" autocomplete="off" class="w-full border border-solid border-border-card rounded-lg lg:p-[18px] p-3 outline-none lg:text-base text-sm font-light placeholder:text-text-di" placeholder="Write Donation Amount">
+                    <button id="donate_for_noakhali" class="bg-btn-alfa w-full text-center rounded-lg hover:bg-btn-beta hover:text-white-beta lg:text-xl text-base font-semibold text-text-alfa lg:py-4 py-2">Donate Now</button>
+                    <dialog id="modal_1" class="modal">
                         <div class="modal-box flex flex-col items-center lg:gap-5 md:gap-4 gap-3 max-h-full">
                             <h3 class="text-3xl text-text-alfa font-bold">Congrats</h3>
                             <img class="h-7 w-7" src="assets/coin.png" alt="coin">
@@ -117,20 +117,19 @@
                 <div class="md:w-7/12 w-full flex flex-col items-start lg:gap-4 gap-3">
                     <div class="inline-flex gap-2 items-center bg-bdt-alfa lg:p-[10px_16px] p-[6px_10px] rounded-lg">
                         <img class="lg:w-6 w-4 lg:h-6 h-4" src="assets/coin.png" alt="coin">
-                        <p class="lg:text-base text-sm font-normal text-text-mono"><span>0</span> BDT</p>
+                        <p class="lg:text-base text-sm font-normal text-text-mono"><span id="donate_feni">0</span> BDT</p>
                     </div>
                     <h2 class="lg:text-xl text-base font-bold text-text-alfa">Donate for Flood Relief in Feni,Bangladesh</h2>
                     <p class="lg:text-base text-sm font-light text-text-gamma">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous
                     donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this
                     calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every
                     contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
-                    <input type="text" autocomplete="off"
+                    <input id="input_feni" type="text" autocomplete="off"
                         class="w-full border border-solid border-border-card rounded-lg lg:p-[18px] p-3 outline-none lg:text-base text-sm font-light placeholder:text-text-di"
                         placeholder="Write Donation Amount">
                     <button
-                        class="bg-btn-alfa w-full text-center rounded-lg hover:bg-btn-beta hover:text-white-beta lg:text-xl text-base font-semibold text-text-alfa lg:py-4 py-2"
-                        onclick="my_modal_2.showModal()">Donate Now</button>
-                    <dialog id="my_modal_2" class="modal">
+                        id="donate_for_feni" class="bg-btn-alfa w-full text-center rounded-lg hover:bg-btn-beta hover:text-white-beta lg:text-xl text-base font-semibold text-text-alfa lg:py-4 py-2">Donate Now</button>
+                    <dialog id="modal_2" class="modal">
                         <div class="modal-box flex flex-col items-center lg:gap-5 md:gap-4 gap-3 max-h-full">
                             <h3 class="text-3xl text-text-alfa font-bold">Congrats</h3>
                             <img class="h-7 w-7" src="assets/coin.png" alt="coin">
@@ -153,7 +152,7 @@
                 <div class="md:w-7/12 w-full flex flex-col items-start lg:gap-4 gap-3">
                     <div class="inline-flex gap-2 items-center bg-bdt-alfa lg:p-[10px_16px] p-[6px_10px] rounded-lg">
                         <img class="lg:w-6 w-4 lg:h-6 h-4" src="assets/coin.png" alt="coin">
-                        <p class="lg:text-base text-sm font-normal text-text-mono"><span>0</span> BDT</p>
+                        <p class="lg:text-base text-sm font-normal text-text-mono"><span id="donate_movement">0</span> BDT</p>
                     </div>
                     <h2 class="lg:text-xl text-base font-bold text-text-alfa">Aid for Injured in the Quota Movement</h2>
                     <p class="lg:text-base text-sm font-light text-text-gamma">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support
@@ -161,13 +160,12 @@
                     you help ensure that injured individuals receive the care and support they need during this challenging time. Every
                     donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a
                     donation to support these brave individuals in their time of need.</p>
-                    <input type="text" autocomplete="off"
+                    <input id="input_movement" type="text" autocomplete="off"
                         class="w-full border border-solid border-border-card rounded-lg lg:p-[18px] p-3 outline-none lg:text-base text-sm font-light placeholder:text-text-di"
                         placeholder="Write Donation Amount">
                     <button
-                        class="bg-btn-alfa w-full text-center rounded-lg hover:bg-btn-beta hover:text-white-beta lg:text-xl text-base font-semibold text-text-alfa lg:py-4 py-2"
-                        onclick="my_modal_3.showModal()">Donate Now</button>
-                    <dialog id="my_modal_3" class="modal">
+                        id="donate_for_movement" class="bg-btn-alfa w-full text-center rounded-lg hover:bg-btn-beta hover:text-white-beta lg:text-xl text-base font-semibold text-text-alfa lg:py-4 py-2">Donate Now</button>
+                    <dialog id="modal_3" class="modal">
                         <div class="modal-box flex flex-col items-center lg:gap-5 md:gap-4 gap-3 max-h-full">
                             <h3 class="text-3xl text-text-alfa font-bold">Congrats</h3>
                             <img class="h-7 w-7" src="assets/coin.png" alt="coin">
@@ -181,28 +179,17 @@
                         </div>
                     </dialog>
                 </div>
+                <div id="abc"></div>
             </div>
         </section>
         <!-- donation-sec-end -->
 
         <!-- history-sec-start -->
         <section id="history-sec" class="w-11/12 mx-auto lg:my-15 md:my-10 my-5 flex-col lg:gap-6 md:gap-5 gap-4 hidden">
-            <div class="border border-border-card border-solid rounded-2xl lg:p-8 md:p-7 p-6">
+            <!-- <div class="border border-border-card border-solid rounded-2xl lg:p-8 md:p-7 p-6">
                 <h3 class="lg:text-xl md:text-lg text-base font-bold lg:mb-4 md:mb-3 mb-2">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
                 <p class="lg:text-base md:text-sm text-xs font-light">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
-            </div>
-            <div class="border border-border-card border-solid rounded-2xl lg:p-8 md:p-7 p-6">
-                <h3 class="lg:text-xl md:text-lg text-base font-bold lg:mb-4 md:mb-3 mb-2">96500 Taka is Donated for famine-2024 at
-                    Feni, Bangladesh</h3>
-                <p class="lg:text-base md:text-sm text-xs font-light">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard
-                    Time)</p>
-            </div>
-            <div class="border border-border-card border-solid rounded-2xl lg:p-8 md:p-7 p-6">
-                <h3 class="lg:text-xl md:text-lg text-base font-bold lg:mb-4 md:mb-3 mb-2">96500 Taka is Donated for famine-2024 at
-                    Feni, Bangladesh</h3>
-                <p class="lg:text-base md:text-sm text-xs font-light">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard
-                    Time)</p>
-            </div>
+            </div> -->
         </section>
         <!-- history-sec-end -->
 
