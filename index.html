@@ -23,7 +23,7 @@
                     'btn-beta': '#454545',
                     'nav-alfa': 'rgba(249, 247, 243, 0.7);',
                     'bdt-alfa': '#F3F3F3',
-                    'border-btn': '#B1B1B3',
+                    'border-btn': '#B7B7B7',
                     'border-card': '#E0E0E2',
                     'text-alfa': '#111111',
                     'text-beta': '#565654',
@@ -32,7 +32,7 @@
                     'text-di': '#A0A0A0',
                     'red': '#E63F31',
                     'blue': '#1F88D9',
-                    'white': 'rgba(255, 255, 255, 0.7)',
+                    'white-alfa': 'rgba(255, 255, 255, 0.7)',
                     'white-beta': 'rgb(255, 255, 255)',
                 },
                 fontFamily: {
@@ -67,9 +67,9 @@
         <!-- nav-bar-end -->
 
         <!-- button-sec-start -->
-        <section class="w-full flex lg:gap-4 md:gap-3 gap-2 justify-center py-3 md:py-4 bg-white">
-            <button class="bg-btn-alfa text-[16px] md:text-[18px] lg:text-[20px] font-[600] lg:p-[16px_32px] md:p-[12px_28px] p-[10px_24px] rounded-lg">Donation</button>
-            <button class="bg-btn-alfa text-[16px] md:text-[18px] lg:text-[20px] font-[600] lg:p-[16px_32px] md:p-[12px_28px] p-[10px_24px] rounded-lg">History</button>
+        <section class="w-full flex lg:gap-4 md:gap-3 gap-2 justify-center py-3 md:py-4 bg-white-alfa">
+            <button class="text-[16px] md:text-[18px] lg:text-[20px] font-[600] lg:p-[16px_32px] md:p-[12px_28px] p-[10px_24px] rounded-lg hover:bg-btn-beta hover:text-white-beta bg-btn-alfa text-text-alfa">Donation</button>
+            <button class="text-[16px] md:text-[18px] lg:text-[20px] font-[600] lg:p-[16px_32px] md:p-[12px_28px] p-[10px_24px] rounded-lg hover:bg-btn-beta hover:text-white-beta border border-border-btn border-solid bg-white-beta text-text-gamma">History</button>
         </section>
         <!-- button-sec-end -->
 
@@ -78,7 +78,7 @@
     <main>
 
         <!-- donation-sec-start -->
-        <section class="w-11/12 mx-auto my-20 flex flex-col gap-5 md:gap-7 lg:gap-8">
+        <section class="w-11/12 mx-auto lg:my-15 md:my-10 my-5 flex flex-col gap-5 md:gap-7 lg:gap-8">
             <div class="border border-solid border-border-card rounded-2xl lg:p-8 md:p-6 p-4 flex flex-col md:flex-row lg:gap-8 md:gap-6 gap-4 items-center">
                 <div class="md:w-5/12 w-full">
                     <img class="w-full aspect-[4/3] md:aspect-auto object-cover rounded-lg" src="assets/noakhali.png" alt="Flood at Noakhali">
@@ -93,7 +93,20 @@
                     essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please
                     join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                     <input type="text" class="w-full border border-solid border-border-card rounded-lg lg:p-[18px] p-3 outline-none lg:text-base text-sm font-light placeholder:text-text-di" placeholder="Write Donation Amount">
-                    <button class="bg-btn-alfa w-full text-center rounded-lg hover:bg-btn-beta hover:text-white-beta lg:text-xl text-base font-semibold text-text-alfa lg:py-4 py-2">Donate Now</button>
+                    <button class="bg-btn-alfa w-full text-center rounded-lg hover:bg-btn-beta hover:text-white-beta lg:text-xl text-base font-semibold text-text-alfa lg:py-4 py-2" onclick="my_modal_1.showModal()">Donate Now</button>
+                    <dialog id="my_modal_1" class="modal">
+                        <div class="modal-box flex flex-col items-center lg:gap-5 md:gap-4 gap-3 max-h-full">
+                            <h3 class="text-3xl text-text-alfa font-bold">Congrats</h3>
+                            <img class="h-7 w-7" src="assets/coin.png" alt="coin">
+                            <p class="text-md font-normal text-text-beta">You Have Donated for Humankind</p>
+                            <h4 class="font-semibold text-xl text-text-alfa">Successfully</h4>
+                            <div>
+                                <form method="dialog">
+                                    <button class="btn">close confirmation</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
                 </div>
             </div>
             <div
@@ -115,8 +128,21 @@
                         class="w-full border border-solid border-border-card rounded-lg lg:p-[18px] p-3 outline-none lg:text-base text-sm font-light placeholder:text-text-di"
                         placeholder="Write Donation Amount">
                     <button
-                        class="bg-btn-alfa w-full text-center rounded-lg hover:bg-btn-beta hover:text-white-beta lg:text-xl text-base font-semibold text-text-alfa lg:py-4 py-2">Donate
-                        Now</button>
+                        class="bg-btn-alfa w-full text-center rounded-lg hover:bg-btn-beta hover:text-white-beta lg:text-xl text-base font-semibold text-text-alfa lg:py-4 py-2"
+                        onclick="my_modal_2.showModal()">Donate Now</button>
+                    <dialog id="my_modal_2" class="modal">
+                        <div class="modal-box flex flex-col items-center lg:gap-5 md:gap-4 gap-3 max-h-full">
+                            <h3 class="text-3xl text-text-alfa font-bold">Congrats</h3>
+                            <img class="h-7 w-7" src="assets/coin.png" alt="coin">
+                            <p class="text-md font-normal text-text-beta">You Have Donated for Humankind</p>
+                            <h4 class="font-semibold text-xl text-text-alfa">Successfully</h4>
+                            <div>
+                                <form method="dialog">
+                                    <button class="btn">close confirmation</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
                 </div>
             </div>
             <div
@@ -139,16 +165,44 @@
                         class="w-full border border-solid border-border-card rounded-lg lg:p-[18px] p-3 outline-none lg:text-base text-sm font-light placeholder:text-text-di"
                         placeholder="Write Donation Amount">
                     <button
-                        class="bg-btn-alfa w-full text-center rounded-lg hover:bg-btn-beta hover:text-white-beta lg:text-xl text-base font-semibold text-text-alfa lg:py-4 py-2">Donate
-                        Now</button>
+                        class="bg-btn-alfa w-full text-center rounded-lg hover:bg-btn-beta hover:text-white-beta lg:text-xl text-base font-semibold text-text-alfa lg:py-4 py-2"
+                        onclick="my_modal_3.showModal()">Donate Now</button>
+                    <dialog id="my_modal_3" class="modal">
+                        <div class="modal-box flex flex-col items-center lg:gap-5 md:gap-4 gap-3 max-h-full">
+                            <h3 class="text-3xl text-text-alfa font-bold">Congrats</h3>
+                            <img class="h-7 w-7" src="assets/coin.png" alt="coin">
+                            <p class="text-md font-normal text-text-beta">You Have Donated for Humankind</p>
+                            <h4 class="font-semibold text-xl text-text-alfa">Successfully</h4>
+                            <div>
+                                <form method="dialog">
+                                    <button class="btn">close confirmation</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
                 </div>
             </div>
         </section>
         <!-- donation-sec-end -->
 
         <!-- history-sec-start -->
-        <section class="history hidden">
-
+        <section class="w-11/12 mx-auto lg:my-15 md:my-10 my-5 flex flex-col lg:gap-6 md:gap-5 gap-4">
+            <div class="border border-border-card border-solid rounded-2xl lg:p-8 md:p-7 p-6">
+                <h3 class="lg:text-xl md:text-lg text-base font-bold lg:mb-4 md:mb-3 mb-2">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
+                <p class="lg:text-base md:text-sm text-xs font-light">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+            </div>
+            <div class="border border-border-card border-solid rounded-2xl lg:p-8 md:p-7 p-6">
+                <h3 class="lg:text-xl md:text-lg text-base font-bold lg:mb-4 md:mb-3 mb-2">96500 Taka is Donated for famine-2024 at
+                    Feni, Bangladesh</h3>
+                <p class="lg:text-base md:text-sm text-xs font-light">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard
+                    Time)</p>
+            </div>
+            <div class="border border-border-card border-solid rounded-2xl lg:p-8 md:p-7 p-6">
+                <h3 class="lg:text-xl md:text-lg text-base font-bold lg:mb-4 md:mb-3 mb-2">96500 Taka is Donated for famine-2024 at
+                    Feni, Bangladesh</h3>
+                <p class="lg:text-base md:text-sm text-xs font-light">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard
+                    Time)</p>
+            </div>
         </section>
         <!-- history-sec-end -->
 
